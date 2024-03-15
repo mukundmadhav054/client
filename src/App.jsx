@@ -4,7 +4,7 @@ import { Container, TextField, Typography, Button } from "@mui/material";
 
 const App = () => {
   const socket = useMemo(() => {
-    return io("https://server-daas.vercel.app/");
+    return io("https://server-ltng.onrender.com/");
   }, []);
 
   const [message, setMessage] = useState("");
