@@ -3,6 +3,7 @@ import { io } from "socket.io-client";
 import { Container, TextField, Typography, Button } from "@mui/material";
 
 const App = () => {
+  console.log(import.meta.env)
   const socket = useMemo(() => {
     return io("https://server-ltng.onrender.com/");
   }, []);
